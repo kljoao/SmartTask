@@ -1,0 +1,94 @@
+.inter-black-strong-32{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: var(--ion-color-dark-contrast);
+}
+
+.inter-white-strong-32{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: var(--ion-background-color);
+}
+
+.inter-black-thin-12{
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    color: var(--ion-color-dark-contrast);
+}
+
+.inter-white-thin-12{
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    color: #FFFFFFFF;
+}
+
+.detail-cinza{
+    color: rgba(0, 0, 0, 0.30);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+.detail-cinza-n{
+    color: rgba(0, 0, 0, 0.30);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inter-black-normal-15{
+    color: #102B40;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inter-black-normal-32{
+    color: #102B40;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inter-white-thin-18{
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    color: #FFFFFFFF;
+}
+
+
+.inter-grey-14{
+    font-family: "Inter", sans-serif;
+    font-size: 14.2px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--ion-color-grey-light);
+}
+
+.loginInput{
+    width: 326px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 0.5px solid #E7E7E7;
+    background: #FFF;
+}

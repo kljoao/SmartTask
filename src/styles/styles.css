@@ -1,0 +1,9 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* CSS IMPORTS */
+@import url(login.css);
+@import url(fonts.css);
+@import url(home.css);
+@import url(tarefas.css);
+@import url(../theme/variables.css);

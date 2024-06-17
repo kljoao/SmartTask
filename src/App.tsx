@@ -1,7 +1,11 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { home, checkbox, calendarNumber, person } from 'ionicons/icons';
+import Register from './pages/Register';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Tarefas from './pages/Tarefas';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,11 +43,49 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
+        <Route exact path="/register">
+          <Register />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route path="/app">
+          <IonTabs>
+            <IonRouterOutlet>
+              <Route exact path="/app/home">
+                <Home />
+              </Route>
+              <Route exact path="/app/tarefas">
+                <Tarefas />
+              </Route>
+              <Route exact path="/app/calendario">
+                {/* Componente Calendário */}
+              </Route>
+              <Route exact path="/app/perfil">
+                {/* Componente Perfil */}
+              </Route>
+              <Route exact path="/app">
+                <Redirect to="/app/home" />
+              </Route>
+            </IonRouterOutlet>
+            <IonTabBar slot="bottom">
+              <IonTabButton tab="home" href="/app/home">
+                <IonIcon icon={home} />
+                <IonLabel>Início</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="Tarefas" href="/app/tarefas">
+                <IonIcon icon={checkbox} />
+                <IonLabel>Tarefas</IonLabel>
+              </IonTabButton>
+              <IonTabButton tab="library" href="/app/calendario">
+                <IonIcon icon={calendarNumber} />
+                <IonLabel>Calendário</IonLabel>
+              </IonTabButton>
+            </IonTabBar>
+          </IonTabs>
         </Route>
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/login" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

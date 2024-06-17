@@ -1,0 +1,92 @@
+/* Estilos Gerais */
+.header-tasks {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+}
+
+.tasks-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.task-list {
+    margin: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.task-item:hover {
+    transform: translateY(-2px);
+}
+
+.task-icon {
+    background-color: #ff4500;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.task-content {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.task-content h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.task-content p {
+    font-size: 14px;
+    margin: 0;
+    color: #999;
+}
+
+.task-options {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.buttons-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.cancel-button, .confirm-button {
+    background: rgb(255, 69, 69);
+    outline: none;
+    border-radius: 500px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.confirm-button{
+    background: rgb(0, 192, 0);
+}
+
+.add-task-itens{
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

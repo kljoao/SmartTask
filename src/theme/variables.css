@@ -1,2 +1,6 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
+
+.md body {
+    --ion-background-color: #F8F8F8;; 
+    --ion-text-color: black;
+    --ion-text-color-step-150: black;
+  }
